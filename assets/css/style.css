@@ -1,0 +1,129 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(252, 252, 252);
+    text-align: center;
+    
+  }
+
+  pre {
+    font-size: 24px;
+  }
+
+  h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 5rem;
+    justify-content: center;
+    padding: 0px;
+    font-family: cursive;
+}
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+
+  .topright {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    margin: 0;
+    line-height: 0%;
+  }
+      
+  .middle {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    width: 67%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .rankings {
+    text-align: center;
+  }
+
+  .button_area {
+    text-align: center;
+  }
+
+  .answers_area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    
+  } 
+
+  .answer,#btn_start, #btn_submit, .btn {
+    background-color:blueviolet;
+    color:white;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px ;
+    border-radius: 5px;
+       
+  }
+
+  .answer:hover {
+    background-color: darkblue;
+    font-weight:900;        
+  }
+
+  hr {
+    margin: auto;
+    width: 100%;
+  }
+
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    padding: 10px 100px;
+    margin: 10px;
+    background-color: lightgray;
+  }
+
+  @media screen and (max-width: 768px) {
+    .middle {
+      top: 30%;
+    }
+    
+    h1 {
+      font-size: 60px;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 50px;
+      text-align: center;
+      color: black;
+      margin-bottom: 5rem;
+      justify-content: center;
+      padding: 0px;
+  }
+  
+    }
+
+    p {
+      font-size: 25px;
+      font-family: cursive;
+      text-align: center;
+    }
+
+    li {
+      margin: 5px;
+      font-size: 12px;
+    }
