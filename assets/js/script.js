@@ -21,6 +21,7 @@ let highscore = {
 let secondsLeft;
 let highscores = [];
 let isCompleted = false;
+
 // initialize question pool
 const myQuestions = [
     {
@@ -57,7 +58,7 @@ const myQuestions = [
     
     },
     {
-        question: "  Which of the following best describes JavaScript?",
+        question: "Which of the following best describes JavaScript?",
         answers: [
             " a low-level programming language",
             "a scripting language precompiled in the browser.",
