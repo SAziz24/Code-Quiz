@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="topleft">
+        <a href="highscores.html">View Highscores</a>
+    </div>
+    <div class="topright">
+        <p id="timeleft"></p>
+    </div>
+    <div class="middle">
+        <h1 id="title">Coding Quiz Challenge</h1>
+        <div class="question-wrapper">
+            <div class="question_area">
+                <h2 id="question">
+                    <!-- <pre>Click below button to start quiz.
+                        
+                    <pre> -->
+                    <span>
+                        <p>Click below button to start quiz.</p>
+                    </span>
+                   
+                    <span>
+                        <p>Each question is worth of 10 points</p>
+                    </span>
+                    <span>
+                        <p>Try to answer the following code related question within the time limit. 
+                            Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                    </span>
+                </h2>
+
+            </div>
+            <div class="button_area">
+                <div id="highscore_presubmission">
+                    <label for="initials">Initials: </label>
+                    <input type="text" id="initials" name="initials">
+                    <button class="btn" id="btn_submit">Submit</button>
+                </div>
+                <button class="btn" id="btn_start">Start Quiz</button>
+
+            </div>
+            <div class="answers_area" id="answers">
+            </div>
+            <div class="result_area">
+                <hr id="hrline">
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
