@@ -32,7 +32,7 @@ const myQuestions = [
             "forEach",
             "None of the above",
         ],
-        correctAnswer: 3,
+        correctAnswer: 2,
         
     },
     {
@@ -43,7 +43,7 @@ const myQuestions = [
             `document.write("Hello World)`,
             `response.write("Hello World)`
         ],
-        correctAnswer: 3,
+        correctAnswer: 2,
     },
 
     {
@@ -54,7 +54,7 @@ const myQuestions = [
             "Return a value"
             
         ],
-        correctAnswer: 1,
+        correctAnswer: 0,
     
     },
     {
@@ -65,7 +65,7 @@ const myQuestions = [
             "a compiled scripting language.",
             " an object-oriented scripting language."
         ],
-        correctAnswer: 3,
+        correctAnswer: 2,
     }
 ];
 
@@ -87,8 +87,11 @@ startBtn.addEventListener("click", startQuiz);
 
 answersEl.addEventListener("click", function (event) {
     var element = event.target;
+
+    var index = parseInt(element.getAttribute("id"), 10);
+    console.log('currentQuestion.currentAnswer',currentQuestion.correctAnswer)
+   console.log('index', index)
     if (element.matches(".answer")) {
-        var index = parseInt(element.getAttribute("id"), 10);
         if (currentQuestion.correctAnswer === index) {
             hrlineEl.setAttribute("style","margin: auto; width: 100%");
             resultEl.textContent = "Good Job! You got it right! 10 points added!"
