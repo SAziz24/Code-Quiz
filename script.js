@@ -89,7 +89,7 @@ answersEl.addEventListener("click", function (event) {
     var element = event.target;
     if (element.matches(".answer")) {
         var index = parseInt(element.getAttribute("id"), 10);
-        if (currentQuestion.correctAnswer === index) {
+        if (currentQuestion.correctAnswer === index + 1) {
             hrlineEl.setAttribute("style","margin: auto; width: 100%");
             resultEl.textContent = "Good Job! You got it right! 10 points added!"
             points += 10;
