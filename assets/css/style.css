@@ -121,6 +121,8 @@ body, html {
       font-size: 25px;
       font-family: cursive;
       text-align: center;
+      background-color: lavender;
+      color: black;
     }
 
     li {
